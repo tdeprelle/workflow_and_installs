@@ -1,14 +1,15 @@
-### Dual boot from Windows 10 to Windows 10 + Ubuntu 16.04
+##### Dual boot from Windows 10 to Windows 10 + Ubuntu 16.04
 
-This guide describe how to set up a dual boot on a windows 10 machine, with ubuntu 16.04 installed. It worked for me on 15-02-17 but I only tried it once.
+This guide describe how to set up a dual boot on a windows 10 machine, with ubuntu 16.04 installed. It worked for me on 15-02-17 but I only tried it *once*.
 
 ### Step 1: Prepare Windows Machine for Dual-Boot
-1. You need to log in with an account which has administrative rights. Then open a terminal (admin).
-Start Menu -> Command Prompt (Admin)
+1. You need to log in with an account which has **administrative rights**. Then open a terminal (admin).
 
-2. Now we want to partition the disk to create some space for linux. There are two ways to do this. One is to use the disk management provided by Windows, but it has limitations I will discuss. The other is to use Active@ Partition Manager.
+**Start Menu -> Command Prompt (Admin)**
 
-  * Windows Disk Management
+2. Now we want to partition the disk to create some space for linux. There are *two ways* to do this. One is to use the Disk Management provided by Windows, but it has limitations I will discuss. The other is to use Active@ Partition Manager.
+
+  * **Windows Disk Management**
 
     - Open it in the terminal with :
 
@@ -16,9 +17,9 @@ Start Menu -> Command Prompt (Admin)
 
     - Shrink Volume with a right click on the partition
 
-    - Notice that you can only divide you disk by two at the maximum. It won't allow you to leave less space for windows regardless of the size of your disk. This is why I favour the next solution.
+    - Notice that you can only divide you disk by two at the maximum. It won't allow you to leave less space for Windows regardless of the size of your disk. This is why I favour the next solution.
 
-  * Active@ Partition 
+  * **Active@ Partition** 
 
     - Download Active@ Partition 
     - Partition your disk and reboot your computer
@@ -27,7 +28,7 @@ Start Menu -> Command Prompt (Admin)
 
 ### Step 2: Create a live USB
 
-  1. Download iso file for ubuntu [here](http://releases.ubuntu.com/16.04/) or just run
+  1. Download iso file for Ubuntu [here](http://releases.ubuntu.com/16.04/) or just run
 
 
   ``` sh $ wget http://releases.ubuntu.com/16.04/ubuntu-    16.04.1-desktop-amd64.iso ```
@@ -43,7 +44,7 @@ Start Menu -> Command Prompt (Admin)
 2- Enter the BIOS by hiting  the specific key on startup (usually ```F2```, ```Del``` or ```Esc```)
 
 * Every Bios is different so you will have to adapt the procedure for your machine.
-* Look for Boot Order in the settings and put the USB Boot in first position
+* Look for **Boot Order** in the settings and put the USB Boot in **first** position
 * Exit BIOS saving changes
 
 3- If everything works, your live-key and your BIOS has been correctly configured, an ubuntu menu appears.
@@ -82,15 +83,17 @@ Start Menu -> Command Prompt (Admin)
    ``` sh $ sudo apt-get install gparted ```
    ``` sh $ sudo gparted ```
 
-* GParted analyses your disk. You can select the swap partition, run " swapoff" and then delete this partition.
+* GParted analyses your disk. You can select the swap partition, **run " swapoff"** and then **delete this partition**.
 * You now have used space on the right of you Ubuntu partition.
-* You can extend your Ubuntu partition to fill the entire space left by the swap partition
+* You can **extend your Ubuntu partition** to fill the entire space left by the swap partition
 * Apply changes
 * Reboot
 * Check that the deletion of the swap was done by :
+
    ``` sh $ sudo apt-get install htop ```
    ``` sh $ htop ```
-* You should see 0K for the swap.
+   
+* You should see "0 K" for the swap.
  
 
 ### Step 6: Update, Install the basic tool on Ubuntu to set up a good workflow [here](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/useful_basic_install)!
