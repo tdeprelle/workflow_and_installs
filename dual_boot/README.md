@@ -1,4 +1,4 @@
-## Dual boot from Windows 10 to Windows 10 + Ubuntu 16.04
+# Dual boot from Windows 10 to Windows 10 + Ubuntu 16.04
 
 This guide describe how to set up a dual boot on a windows 10 machine, with ubuntu 16.04 installed. It worked for me on 15-02-17 but I only tried it *once*.
 
@@ -31,7 +31,9 @@ This guide describe how to set up a dual boot on a windows 10 machine, with ubun
   1. Download iso file for Ubuntu [here](http://releases.ubuntu.com/16.04/) or just run
 
 
-  ``` sh $ wget http://releases.ubuntu.com/16.04/ubuntu-    16.04.1-desktop-amd64.iso ```
+  ``` sh
+  $ wget http://releases.ubuntu.com/16.04/ubuntu-    16.04.1-desktop-amd64.iso 
+  ```
 
   2- Download [usb-live creator](http://www.linuxliveusb.com/fr/download)
 
@@ -80,8 +82,12 @@ This guide describe how to set up a dual boot on a windows 10 machine, with ubun
 ### Step 5: Resize your Swap
  * The default installation of Ubuntu creates a swap as big as the RAM which is a good thing. Now if your are on a serveur with 128GB, you don't want to use 128GB of your SSD for your swap. So in this specific case, you need to take additional steps to resize your swap.
  
-   ``` sh $ sudo apt-get install gparted ```
-   ``` sh $ sudo gparted ```
+   ``` 
+   sh $ sudo apt-get install gparted 
+   ```
+   ```
+   sh $ sudo gparted 
+   ```
 
 * GParted analyses your disk. You can select the swap partition, **run " swapoff"** and then **delete this partition**.
 * You now have used space on the right of you Ubuntu partition.
@@ -90,8 +96,12 @@ This guide describe how to set up a dual boot on a windows 10 machine, with ubun
 * Reboot
 * Check that the deletion of the swap was done by :
 
-   ``` sh $ sudo apt-get install htop ```
-   ``` sh $ htop ```
+   ``` sh
+   $ sudo apt-get install htop
+   ```
+   ```
+   sh $ htop 
+   ```
    
 * You should see "0 K" for the swap.
  
