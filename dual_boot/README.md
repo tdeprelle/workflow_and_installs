@@ -76,8 +76,26 @@ Start Menu -> Command Prompt (Admin)
 
   * Browse through the parameters (each BIOS is different...). You're looking for something like UEFI settings, and place Ubuntu before Windows.
 
-
-### Step 5: Update, Install the basic tool on Ubuntu to set up a good workflow [here](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/useful_basic_install)!
+### Step 5: Resize your Swap
+ * The default installation of Ubuntu creates a swap as big as the RAM which is a good thing. Now if your are on a serveur with 128GB, you don't want to use 128GB of your SSD for your swap. So in this specific case, you need to take additional steps to resize your swap.
  
+   ``` sh $ sudo apt-get install gparted ```
+   ``` sh $ sudo gparted ```
+
+* GParted analyses your disk. You can select the swap partition, run " swapoff" and then delete this partition.
+* You now have used space on the right of you Ubuntu partition.
+* You can extend your Ubuntu partition to fill the entire space left by the swap partition
+* Apply changes
+* Reboot
+* Check that the deletion of the swap was done by :
+   ``` sh $ sudo apt-get install htop ```
+   ``` sh $ htop ```
+* You should see 0K for the swap.
+ 
+
+### Step 6: Update, Install the basic tool on Ubuntu to set up a good workflow [here](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/useful_basic_install)!
+ 
+### Acknowledgement 
+ My main [inspiration](http://www.tecmint.com/install-ubuntu-16-04-alongside-with-windows-10-or-8-in-dual-boot/) ! 
 
 [![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/KernelMethods_mva/README?pixel)](https://github.com/ThibaultGROUEIX/KernelMethods_mva/)
