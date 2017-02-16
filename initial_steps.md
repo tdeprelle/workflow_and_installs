@@ -59,9 +59,9 @@ git fetch
 git reset --hard origin/master
 ```
 
-With the last line, the existing setting files will be overwritten by those from my repository. I use (right now): Better Build System, Boxy Theme, BracketHighlighter, Calculate, Clickable URLs, Color Highlighter, FileSystem Autocompletion, GNU Octave Completions, Google Spell Check, Gremlins, HighlightWords, Inc-Dec-Value, LaTeX Snippets, LaTeXing, Markdown Preview, Matlab Completions, Package Control, SendREPL, SendText, SendTextPlus, SublimeGit, SublimeLinter, SyntaxHighlightTools.
+With the last line, the existing setting files will be overwritten by those from my repository. I use (right now): *Better Build System, Boxy Theme, BracketHighlighter, Calculate, Clickable URLs, Color Highlighter, FileSystem Autocompletion, GNU Octave Completions, Google Spell Check, Gremlins, HighlightWords, Inc-Dec-Value, LaTeX Snippets, LaTeXing, Markdown Preview, Matlab Completions, Package Control, SendREPL, SendText, SendTextPlus, SublimeGit, SublimeLinter, SyntaxHighlightTools*.
 
-You can experience some issues with sublime because it has to install all the packages. So open it and close it a few times until the display is bug-free.
+You can experience some **issues** with sublime because it has to install all the packages. So open it and close it a few times until the display is bug-free.
 
 I install sublime-text at this point for **sendTextPlus** which allow you to send a line from sublime to your terminal and run it by 'ctrl'+'enter'. I find it convenient to just open the [script associated](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/initial_steps.sh) with this post, and run each line with 'ctrl'+'enter', while checking that everything is going smoothly.
 
@@ -157,6 +157,7 @@ Inkscape is a very useful package to create figures, and illustrations. It has a
 ``` sh
 $ sudo apt-get install ffmpeg
 ``` 
+
 ffmpeg is really useful and unavoidable to manipulate videos and frames. I use it to create videos from multiple frames to show the evolution of a phenomenon captured at different moment in time.
 I have created [this](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/make_video_out_frames.md) small script to do just that. 
 
@@ -167,7 +168,7 @@ Byobu allows you to have multiple panels in your terminal just like your browser
 ``` sh
 $ sudo apt-get install byobu
 $ byobu-enable #on server, when connecting via ssh, will automatically launch byobu
-``` sh
+```
 
 You can add this line to your ~/.bashrc to have color-prompt in byobu, which looks nicer:
 
