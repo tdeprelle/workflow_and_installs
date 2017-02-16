@@ -119,22 +119,28 @@ I have created [this](https://github.com/ThibaultGROUEIX/workflow_and_installs/t
 
 sudo apt-get install byobu
 byobu-enable #on serveur, when connecting via ssh, will automatically launch byobu
-# add to .bashrc for color-prompt: 
+# add to .bashrc for color-prompt:
+
+``` sh
 [ -r /home/user/.byobu/prompt ] && . /home/user/.byobu/prompt
 
 
 #### *gparted* -- manage partition
+``` sh
 sudo apt-get install gparted
 
 #### *synaptic* manage packages
+``` sh
 sudo apt-get install synaptic
 ### Benchmark
 
+If you want to test your new hardware, or see of it decays over time, check the [dedicated post](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/benchmark.md) ! ;) 
 #### Disk
+``` sh
 sudo hdparm -Tt /dev/nvme0n1p2 
 
 #### GPU NVIDIA
-
+``` sh
 
 ### Acknowledgement
 If you reach this point without any errors, as you should, you want to say, thank you 'apt-get' ! 

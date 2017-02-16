@@ -1,5 +1,8 @@
 # Using Torch, with CUDA, CUDNN, notebooks.
 
+
+# just not ready yet! Wait a few more days...
+
 sudo apt-get install cmake
 sudo apt-get install libreadline-dev
 git clone https://github.com/torch/distro.git ~/torch --recursive
