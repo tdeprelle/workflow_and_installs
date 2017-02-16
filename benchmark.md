@@ -10,27 +10,17 @@ You can now start the benchmark.
 $ sudo hdparm -Tt /dev/YOUR_DISK
 ```
 
-* On my serveur SSD :
 
-Timing cached reads:   23312 MB in  1.99 seconds = 11703.38 MB/sec
-
-Timing buffered disk reads: 1540 MB in  3.00 seconds = 513.28 MB/sec
-
-* On my laptop SSD :
-
-Timing cached reads:   21448 MB in  2.00 seconds = 10737.70 MB/sec
-Timing buffered disk reads: 3820 MB in  3.00 seconds = 1273.17 MB/sec
-
-
-* On my laptop HDD :
-
-Timing cached reads:   20816 MB in  2.00 seconds = 10420.64 MB/sec
-Timing buffered disk reads: 408 MB in  3.01 seconds = 135.65 MB/sec
+Disk | Timing cached reads | Timing buffered disk reads
+--- | --- | ---
+*serveur SSD* | 11703.38 MB/sec | 513.28 MB/sec 
+*On my laptop SSD* | 10737.70 MB/sec | 1273.17 MB/sec 
+*On my laptop HDD* | 10420.64 MB/sec | 135.65 MB/sec
 
 
 
 #### GPU NVIDIA
-I assume that you have a Nvidia GPU with Cuda installed. If not [install_cuda](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/torch_workflow.md).
+I assume that you have a Nvidia GPU with Cuda installed. If not [install cuda 8](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/torch_workflow.md).
 
 Cuda comes with a set of samples that allow you to test your GPU. You need to compile them first.
 ``` sh
@@ -48,30 +38,12 @@ $ cd ./bin/x86_64/linux/release/
 $ ./nbody -benchmark -numbodies=256000
 ```
 
-Here are the results for different GPU I encountered in my life. Feel free to send me your result, I will add them and make a clean table if need be.
+Here are the results for different GPU I encountered in my life. Feel free to send me your result, I will add them.
 
-* *TITAN X (Pascal)*
-
-256000 bodies, total time for 10 iterations: 1727.083 ms
-
-= 379.461 billion interactions per second
-
-= 7589.210 single-precision GFLOP/s at 20 flops per interaction
+GPU | cuda | total time for 10 iterations (ms) | billion interactions per second | single-precision GFLOP/s at 20 flops per interaction
+--- | --- | --- | --- | ---
+*TITAN X (Pascal)* | 8 | 1727 | 379 | 7589
+*GeForce GTX TITAN X* | 8 | 3688 | 177 | 3553
+*GTX970M* | 8 | 9148 | 71 | 1432
 
 
-* *GeForce GTX TITAN X*
-
-256000 bodies, total time for 10 iterations: 3688.793 ms
-
-= 177.662 billion interactions per second
-
-= 3553.249 single-precision GFLOP/s at 20 flops per interaction
-
-
-* *GTX970M*
-
-256000 bodies, total time for 10 iterations: 9148.667 ms
-
-= 71.634 billion interactions per second
-
-= 1432.690 single-precision GFLOP/s at 20 flops per interaction
