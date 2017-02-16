@@ -52,11 +52,12 @@ $ subl
 If you want to get my configuration of sublimes in a few clicks, you can do the following :
 
 ``` sh
-cd ~/.config/sublime-text-3
-git init
-git remote add origin git@bitbucket.org:ThibaultGROUEIX/st3-settings.git
-git fetch
-git reset --hard origin/master
+$ sudo apt-get -y install git
+$ cd ~/.config/sublime-text-3
+$ git init
+$ git remote add origin git@bitbucket.org:ThibaultGROUEIX/st3-settings.git
+$ git fetch
+$ git reset --hard origin/master
 ```
 
 With the last line, the existing setting files will be overwritten by those from my repository. I use (right now): *Better Build System, Boxy Theme, BracketHighlighter, Calculate, Clickable URLs, Color Highlighter, FileSystem Autocompletion, GNU Octave Completions, Google Spell Check, Gremlins, HighlightWords, Inc-Dec-Value, LaTeX Snippets, LaTeXing, Markdown Preview, Matlab Completions, Package Control, SendREPL, SendText, SendTextPlus, SublimeGit, SublimeLinter, SyntaxHighlightTools*.
@@ -141,8 +142,21 @@ xsane is a good tool to scan a file. You can connect *most* scanner without any 
 #### **VLC (Video)** -- Watch videos
 
 ``` sh
-sudo apt-get install vlc
+$ sudo apt-get install vlc
 ```
+
+#### **Skype** -- call you friends
+
+Visit this [website](https://www.skype.com/en/download-skype/skype-for-linux/downloading-web/?type=weblinux-deb) and download the package.
+
+You can install it with the GUI or :
+
+``` sh
+$ sudo dpkg -i DEB_PACKAGE
+$ sudo apt-get install -f #for missing dependencies
+```
+
+It's possible that your webcam isn't enabled. You can enable it with 'fn'+'webcam-button'. The 'webcam-button' vary from laptop to laptop. Each time you strike this configuration, it adds/removes the device in hardware as if it has been physically connected/disconnected. You can watch /dev/video0 appear and disappear.
 
 #### **Inkscape** -- Make nice illustrations
 
@@ -193,6 +207,39 @@ Synaptic is a package manager that allows to install packages with a GUI. I use 
 ### Benchmark
 
 If you want to test your new hardware, or see of it decays over time, check the [dedicated post](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/benchmark.md) ! ;) 
+
+
+### Add new user on your machine
+
+Especially if you are setting up a server, which will be used by many people. You can easily add a new user : 
+
+``` sh
+$ sudo su
+$ adduser my_new_user
+```
+
+If you want to grant him administrative rights :
+
+``` sh
+$ usermod -aG sudo my_new_user
+```
+
+You can test the new account : 
+
+``` sh
+$ # switch to new account
+$ su - my_new_user
+$ # run a test, works only if account has administrative rights
+$ sudo ls -la /root
+```
+
+### Last Check
+
+``` sh
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ sudo reboot # Reboot, always good
+```
 
 ### Going further ?
 
