@@ -6,7 +6,7 @@ The following are the packages I use. if you don't want them, or have no use for
 
 This should take about 15 minutes.
 
-### Install Minimal Ubuntu Packages
+### Install **Minimal Ubuntu Packages**
 
   ``` sh
   $ sudo apt-get install ubuntu-minimal
@@ -33,7 +33,44 @@ And update, upgrade all your packages. This can take some time.
 $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
-### Install Chrome
+
+### Install **Sublime-Text-3** (very optional)
+
+Let's put it that way, if you plan on using sublime-text-3 regularly, then follow this part because the rest will be faster. Otherwise, just skip it :)
+
+``` sh
+$ sudo add-apt-repository ppa:webupd8team/sublime-text-3
+$ apt-get update
+$ sudo apt-get install sublime-text-installer
+``` 
+
+At this point, you have to open Sublime and hit 'ctrl'+'shift'+'p' and type 'install package'. Click enter to install the package manager.
+``` sh
+$ subl
+```
+
+If you want to get my configuration of sublimes in a few clicks, you can do the following :
+
+``` sh
+cd ~/.config/sublime-text-3
+git init
+git remote add origin git@bitbucket.org:ThibaultGROUEIX/st3-settings.git
+git fetch
+git reset --hard origin/master
+```
+
+With the last line, the existing setting files will be overwritten by those from my repository. I use (right now): Better Build System, Boxy Theme, BracketHighlighter, Calculate, Clickable URLs, Color Highlighter, FileSystem Autocompletion, GNU Octave Completions, Google Spell Check, Gremlins, HighlightWords, Inc-Dec-Value, LaTeX Snippets, LaTeXing, Markdown Preview, Matlab Completions, Package Control, SendREPL, SendText, SendTextPlus, SublimeGit, SublimeLinter, SyntaxHighlightTools.
+
+You can experience some issues with sublime because it has to install all the packages. So open it and close it a few times until the display is bug-free.
+
+I install sublime-text at this point for **sendTextPlus** which allow you to send a line from sublime to your terminal and run it by 'ctrl'+'enter'. I find it convenient to just open the [script associated](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/initial_steps.sh) with this post, and run each line with 'ctrl'+'enter', while checking that everything is going smoothly.
+
+To enable **sendTextPlus**, you need to install a Package:
+``` sh
+$ sudo apt-get install xdotool #to enable sendTextPlus
+```
+
+### Install **Chrome**
 
 (or you can stick to firefox, which is better. I use chrome because I'm used to it.)
 
@@ -159,6 +196,8 @@ If you want to test your new hardware, or see of it decays over time, check the 
 ### Going further ?
 
 If like me, you work in academia; you'll want to install Sublime-text, Latex, Python, Cuda, and Torch. Browse through the repo and check if something can interest you !
+
+If you think I forgot something important or super useful, don't hesitate to help contribute to make this post better :)
 
 ### Acknowledgment
 If you reach this point without any errors, as you should, you want to say, thank you 'apt-get' ! 
