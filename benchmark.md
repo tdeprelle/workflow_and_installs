@@ -27,7 +27,7 @@ Cuda comes with a set of samples that allow you to test your GPU. You need to co
 $ cd /usr/local/cuda/samples/
 $ make
 ```
-Or if you have n proccessors :
+Or if you have n processors :
 ``` sh
 $ make -jn
 ```

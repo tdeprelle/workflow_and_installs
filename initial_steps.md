@@ -48,46 +48,52 @@ Then you can install useful extension on Chrome. I use Ghostery to stop trackers
 
 ### Small useful things
 
-#### Htop
+#### **Htop** -- monitor your CPU
 ``` sh
 $ sudo apt-get install htop
 ```
 Running htop in a terminal shows you the state of your processors and RAM, as well as all you process and info about them. It's GREAT.
 
-#### MC
+#### **MC** -- monitor your disks
 ``` sh
 $ sudo apt-get install mc
 ```
 Running mc in a terminal shows you the state of your hard-drive. I use it to monitor the size of each folder. ('ctrl'+'space' on a folder to compute its size)
 
-#### Dropbox
+#### **Dropbox** -- save and share your data
+
 ``` sh
 $ sudo add-apt-repository -y "deb http://linux.dropbox.com/ubuntu $(lsb_release -sc) main"
 $ cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
 $ ~/.dropbox-dist/dropboxd
 ```
+
 I don't present this famous useful online data storage. I use it to backup some files and share them. 
 Sometimes the deamon Dropbox isn't launch automatically on start-up. If that is the case for you, you should open start-up application -> add a new daemon with command line ->  "~/.dropbox-dist/dropboxd"
 
-#### Gimp
+#### **Gimp** -- edit pictures
 ``` sh
 $ sudo apt-get install -y gimp
 ```
 
-#### pdftk
+#### **pdftk** -- edit pdf files
 Always the same ...
+
 ``` sh
 $ sudo apt-get install -y pdftk
 ```
+
 pdftk is a really convenient tool for editing pdf files. You can easily burst a multi page pdf into separate files, concatenate them, rotate a page and much more if you are a more advanced user.
 
 The command I use most are :
+
 ``` sh
 $ pdftk in.pdf cat 1east 2-end output out.pdf
 $ pdftk input1.pdf input2.pdf cat output join.pdf
-$ pdftk in.pdf burstq
+$ pdftk in.pdf burst
 ```
-#### xsane
+
+#### **xsane** -- scan files
 
 ``` sh
 $ sudo apt-get install -y xsane
@@ -95,19 +101,21 @@ $ sudo apt-get install -y xsane
 
 xsane is a good tool to scan a file. You can connect *most* scanner without any worries.
 
-#### VLC (Video)
+#### **VLC (Video)** -- Watch videos
+
 ``` sh
 sudo apt-get install vlc
 ```
 
-#### Inkscape
+#### **Inkscape** -- Make nice illustrations
 
 ``` sh
 $ sudo apt-get install inkscape
 ``` 
+
 Inkscape is a very useful package to create figures, and illustrations. It has a useful "latex" plug-in.
 
-#### ffmpeg
+#### **ffmpeg** -- create videos from frames
 
 ``` sh
 $ sudo apt-get install ffmpeg
@@ -115,33 +123,44 @@ $ sudo apt-get install ffmpeg
 ffmpeg is really useful and unavoidable to manipulate videos and frames. I use it to create videos from multiple frames to show the evolution of a phenomenon captured at different moment in time.
 I have created [this](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/make_video_out_frames.md) small script to do just that. 
 
-#### byobu
+#### **byobu** -- Don't get lost in your terminals
 
-sudo apt-get install byobu
-byobu-enable #on serveur, when connecting via ssh, will automatically launch byobu
-# add to .bashrc for color-prompt:
+Byobu allows you to have multiple panels in your terminal just like your browser. It's actually very useful if you need a lot of them.
+
+``` sh
+$ sudo apt-get install byobu
+$ byobu-enable #on server, when connecting via ssh, will automatically launch byobu
+``` sh
+
+You can add this line to your ~/.bashrc to have color-prompt in byobu, which looks nicer:
 
 ``` sh
 [ -r /home/user/.byobu/prompt ] && . /home/user/.byobu/prompt
 ``` 
 
-#### *gparted* -- manage partition
+#### **gparted** -- manage partition
 
 ``` sh
-sudo apt-get install gparted
+$ sudo apt-get install gparted
 ``` 
+GParted is a useful tool to manage your partition. I have used it to install Ubuntu alongside windows [here](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/dual_boot.md)
 
-#### *synaptic* manage packages
+#### **synaptic** -- manage packages
 
 ``` sh
-sudo apt-get install synaptic
+$ sudo apt-get install synaptic
 ``` 
+Synaptic is a package manager that allows to install packages with a GUI. I use it because it's one of the easiest way to see which package are already installed on the machine.
 
 ### Benchmark
 
 If you want to test your new hardware, or see of it decays over time, check the [dedicated post](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/benchmark.md) ! ;) 
 
-### Acknowledgement
+### Going further ?
+
+If like me, you work in academia; you'll want to install Sublime-text, Latex, Python, Cuda, and Torch. Browse through the repo and check if something can interest you !
+
+### Acknowledgment
 If you reach this point without any errors, as you should, you want to say, thank you 'apt-get' ! 
 
 [![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/KernelMethods_mva/README?pixel)](https://github.com/ThibaultGROUEIX/KernelMethods_mva/)
