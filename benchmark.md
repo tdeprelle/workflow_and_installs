@@ -47,3 +47,4 @@ GPU | cuda | total time for 10 iterations (ms) | billion interactions per second
 *GTX970M* | 8 | 9148 | 71 | 1432
 
 
+[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/KernelMethods_mva/README?pixel)](https://github.com/ThibaultGROUEIX/KernelMethods_mva/)

@@ -7,4 +7,9 @@ This repo is to share my tribulation in installing different software and settin
 
 - [Some benchmark for hardware in Ubuntu](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/benchmark.md)
 
-- [Coming next : Make a video out of frames with ffmpeg](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/make_video_out_frames.md)
+- [Make a video out of frames with ffmpeg](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/make_video_out_frames.md)
+
+- [Coming next : Torch7 Workflow (cuda, notebooks, useful packages)](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/torch_workflow.md)
+
+
+[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/KernelMethods_mva/README?pixel)](https://github.com/ThibaultGROUEIX/KernelMethods_mva/)
