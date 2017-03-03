@@ -72,7 +72,7 @@ sudo cp ./pip-bash-completion/pip /etc/bash_completion.d/
 . /etc/bash_completion.d/pip
 ```
 
-You main now do ```pip ``` + tab !
+You may now do ```pip ``` + tab !
 
 ### Test environment to do Machine Learning
 
