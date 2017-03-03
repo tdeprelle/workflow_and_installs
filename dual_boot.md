@@ -118,3 +118,5 @@ $ htop
 [![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/blob/master/dual_boot.md)](https://github.com/ThibaultGROUEIX/workflow_and_installs/)
 
 [![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/workflow_and_installs/readme)](https://github.com/igrigorik/ga-beacon)
+
+[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/workflow_and_installs/readme)](https://github.com/ThibaultGROUEIX/workflow_and_installs/)
