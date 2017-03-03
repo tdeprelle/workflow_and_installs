@@ -111,4 +111,4 @@ $ htop
 ### Acknowledgement 
  My main [inspiration](http://www.tecmint.com/install-ubuntu-16-04-alongside-with-windows-10-or-8-in-dual-boot/) ! 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/KernelMethods_mva/README?pixel)](https://github.com/ThibaultGROUEIX/KernelMethods_mva/)
+[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/edit/master/dual_boot.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/edit/master/dual_boot.md)
