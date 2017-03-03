@@ -29,11 +29,11 @@ $ for i in my_image[0-9].png; do mv $i ${i//my_image/my_image0}; done
 ```
 
 It replaces every occurence of "my_image" by "my_image0" in the selected list of images. 
-It's probably best to save your images with the correct nomenclature obviously.
+Obviously, it's probably best to save your images with the correct nomenclature already.
 
 ### Third step : apply any filter to your images
 
-Resize, tonemapping...
+Resize, tone-mapping...
 
 ``` sh
 $ for i in my_image*.png; do whatever; done
@@ -55,7 +55,7 @@ If your observing the convergence of a phenomenon over time, you might want to p
 $ ffmpeg -i output.mp4 -i ./converged_image.jpg -filter_complex "[0:v:0]pad=iw*2:ih+1[bg]; [bg][1:v:0]overlay=w" output_with_converged_image.mp4 
 ```
 
-That's it ! The script I use to di this automatically is [here](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/make_video_out_frames.md). Takes two arguments, the directory with the frames, and the directory where I want the created video.
+That's it ! The script I use to do this automatically is [here](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/make_video_out_frames.md). Takes two arguments, the directory with the frames, and the directory where I want the created video.
 
 [![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/KernelMethods_mva/README?pixel)](https://github.com/ThibaultGROUEIX/KernelMethods_mva/)
 
