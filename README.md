@@ -12,4 +12,4 @@ This repo is to share my tribulation in installing different software and settin
 - [Coming next : Torch7 Workflow (cuda, notebooks, useful packages)](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/torch_workflow.md)
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/KernelMethods_mva/README?pixel)](https://github.com/ThibaultGROUEIX/KernelMethods_mva/)
+[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/edit/master/README.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/edit/master/README.md)
