@@ -9,6 +9,9 @@ This repo is to share my tribulation in installing different software and settin
 
 - [Make a video out of frames with ffmpeg](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/make_video_out_frames.md)
 
+- [Setup Python with anaconda, jupyter...](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/python_setup.md)
+
+
 - [Coming next : Torch7 Workflow (cuda, notebooks, useful packages)](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/torch_workflow.md)
 
 
