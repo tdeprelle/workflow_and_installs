@@ -83,7 +83,7 @@ source activate py27
 conda install matplotlib numpy scikit-learn
 ```
 
-You can test that everything is correctly set-up by lauching the following [file](https://github.com/ThibaultGROUEIX/workflow_and_installs/blob/master/test_python_setup.py) (created by [Nicolas Baskiotis](http://www-connex.lip6.fr/~baskiotisn/))  with ```python test_python_setup.py```
+You can test that everything is correctly set-up by lauching the following (not there yet, but soon!) [file](https://github.com/ThibaultGROUEIX/workflow_and_installs/blob/master/test_python_setup.py) (created by [Nicolas Baskiotis](http://www-connex.lip6.fr/~baskiotisn/))  with ```python test_python_setup.py```
 
 ### Source :information_source:
 
