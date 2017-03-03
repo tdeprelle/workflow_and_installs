@@ -57,5 +57,5 @@ $ ffmpeg -i output.mp4 -i ./converged_image.jpg -filter_complex "[0:v:0]pad=iw*2
 
 That's it ! The script I use to do this automatically is [here](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/make_video_out_frames.md). Takes two arguments, the directory with the frames, and the directory where I want the created video.
 
-[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/edit/master/make_video_out_frames.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/edit/master/make_video_out_frames.md)
+[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/blob/master/make_video_out_frames.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/blob/master/make_video_out_frames.md)
 
