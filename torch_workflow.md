@@ -49,4 +49,4 @@ sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64
 sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 #from : https://yangcha.github.io/GTX-1080/
 
-[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/blob/master/torch_workflow.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/blob/master/torch_workflow.md)
+[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/torch_workflow.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/)
