@@ -91,5 +91,5 @@ You can test that everything is correctly set-up by lauching the following (not 
 
 [stackoverflow](http://stackoverflow.com/questions/30492623/using-both-python-2-x-and-python-3-x-in-ipython-notebook)
 
-[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/blob/master/python_setup.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/blob/master/python_setup.md)
+[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/python_setup.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/)
 
