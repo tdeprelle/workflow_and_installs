@@ -74,16 +74,28 @@ sudo cp ./pip-bash-completion/pip /etc/bash_completion.d/
 
 You may now do ```pip ``` + tab !
 
+### Update a package
+
+```shell
+source activate your_env
+conda update my_package #can be conda to update conda itself, or python
+#alternatively
+pip install --upgrade my_package
+```
+
+It can be beneficial to use either pip or conda, because the latest version aren't neccessarily the same for each of them. For example, at the current time, the latest PyDot from conda is pydot-1.0.28 and the latest PyDot from pip is pydot-1.2.3
+
+
+
 ### Test environment to do Machine Learning
-
-
 
 ```shell
 source activate py27
-conda install matplotlib numpy scikit-learn
+conda install matplotlib numpy scikit-learn pygame
+pip install --upgrade pydot
 ```
 
-You can test that everything is correctly set-up by lauching the following (not there yet, but soon!) [file](https://github.com/ThibaultGROUEIX/workflow_and_installs/blob/master/test_python_setup.py) (created by [Nicolas Baskiotis](http://www-connex.lip6.fr/~baskiotisn/))  with ```python test_python_setup.py```
+You can test that everything is correctly set-up by lauching the following [file](https://github.com/ThibaultGROUEIX/workflow_and_installs/blob/master/test_python_setup.py) (created by [Nicolas Baskiotis](http://www-connex.lip6.fr/~baskiotisn/))  with ```python test_python_setup.py```
 
 ### Source :information_source:
 
