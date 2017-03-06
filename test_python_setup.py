@@ -3,7 +3,7 @@ CRITIC = 1
 OPT = 2
 
 ## format : (nom du module, version minimal, CRITIC|OPT)
-MODULES = [('matplotlib','1.5',CRITIC), ('sklearn','0.18',CRITIC), ('pygame','1.9',CRITIC), ('numpy','1.11',CRITIC), ('mpl_toolkits.mplot3d','',OPT), ('pydot','1.1',CRITIC)]
+MODULES = [('matplotlib','1.5',CRITIC), ('sklearn','0.18',CRITIC), ('pygame','1.9',CRITIC), ('numpy','1.11',CRITIC), ('mpl_toolkits.mplot3d','',OPT), ('pydot','1.0',CRITIC)]
 
 def check(mod,ver,critic):
     def _check(num):
