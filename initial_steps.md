@@ -25,7 +25,7 @@ $ sudo add-apt-repository -y ppa:freyja-dev/unity-tweak-tool-daily
 $ sudo add-apt-repository -y ppa:stefansundin/truecrypt
 $ sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
-```
+ ```
 
 And update, upgrade all your packages. This can take some time.
 
@@ -42,7 +42,7 @@ Let's put it that way, if you plan on using sublime-text-3 regularly, then follo
 $ sudo add-apt-repository ppa:webupd8team/sublime-text-3
 $ apt-get update
 $ sudo apt-get install sublime-text-installer
-``` 
+```
 
 At this point, you have to open Sublime and hit 'ctrl'+'shift'+'p' and type 'install package'. Click enter to install the package manager.
 ``` sh
@@ -162,7 +162,7 @@ It's possible that your webcam isn't enabled. You can enable it with 'fn'+'webca
 
 ``` sh
 $ sudo apt-get install inkscape
-``` 
+```
 
 Inkscape is a very useful package to create figures, and illustrations. It has a useful "latex" plug-in.
 
@@ -170,7 +170,7 @@ Inkscape is a very useful package to create figures, and illustrations. It has a
 
 ``` sh
 $ sudo apt-get install ffmpeg
-``` 
+```
 
 ffmpeg is really useful and unavoidable to manipulate videos and frames. I use it to create videos from multiple frames to show the evolution of a phenomenon captured at different moment in time.
 I have created [this](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/make_video_out_frames.md) small script to do just that. 
@@ -188,20 +188,20 @@ You can add this line to your ~/.bashrc to have color-prompt in byobu, which loo
 
 ``` sh
 [ -r /home/user/.byobu/prompt ] && . /home/user/.byobu/prompt
-``` 
+```
 
 #### **gparted** -- manage partition
 
 ``` sh
 $ sudo apt-get install gparted
-``` 
+```
 GParted is a useful tool to manage your partition. I have used it to install Ubuntu alongside windows [here](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/dual_boot.md)
 
 #### **synaptic** -- manage packages
 
 ``` sh
 $ sudo apt-get install synaptic
-``` 
+```
 Synaptic is a package manager that allows to install packages with a GUI. I use it because it's one of the easiest way to see which package are already installed on the machine.
 
 ### Benchmark
@@ -232,6 +232,16 @@ $ su - my_new_user
 $ # run a test, works only if account has administrative rights
 $ sudo ls -la /root
 ```
+
+Want to connect with ssh to your new machine ?
+
+```shell
+sudo apt-get install openssh-server
+```
+
+You can connect either with password or sshkey if you set it up. This is a [good tuto](http://www.linuxproblem.org/art_9.html).
+
+You may want to add more security to the ssh connexions but it's beyond the scope of this.
 
 ### Last Check
 
