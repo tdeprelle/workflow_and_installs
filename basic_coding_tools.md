@@ -119,3 +119,4 @@ It's detailled [here](https://github.com/ThibaultGROUEIX/workflow_and_installs/t
 
 
 
+[![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/basic_coding_tools.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/)
