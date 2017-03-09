@@ -63,6 +63,7 @@ luarocks install torchnet
 A very useful package to reduce your memory comsumption while training a network.
 
 ```shell
+sudo apt-get install graphviz
 luarocks install optnet
 ```
 
