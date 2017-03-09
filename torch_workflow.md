@@ -75,7 +75,7 @@ A super useful package to display images in your browser during training.
 luarocks install display
 ```
 
-Once it is installed, you can just run :
+Once it is installed, you can just run ``` th -ldisplay.start``` in  a terminal and in your lua script:
 
 ```Lua
 disp = require 'display'
