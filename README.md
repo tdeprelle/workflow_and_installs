@@ -12,7 +12,10 @@ This repo is to share my tribulation in installing different software and settin
 - [Setup Python with anaconda, jupyter...](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/python_setup.md)
 
 
-- [Coming next : Torch7 Workflow (cuda, notebooks, useful packages)](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/torch_workflow.md)
+- [Torch7 Workflow (cuda, notebooks, useful packages)](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/torch_workflow.md)
+
+- Comming next [ CUDA 8 and 7.5 install on Ubuntu 16.04 ](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/cuda_install.md)
+
 
 
 [![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/readme.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/)

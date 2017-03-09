@@ -113,6 +113,8 @@ usermod -aG sudo my_new_user
 su - my_new_user
 # run a test
 sudo ls -la /root
+#allow ssh conenctions
+sudo apt-get install open-ssh
 
 #last check
 sudo apt-get update
