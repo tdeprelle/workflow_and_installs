@@ -197,6 +197,7 @@ Options for ``` Docker run```
 
 * -it : an interactive tty in the container
 * --rm : doesn't store exited process
+* --volume :
 
 
 
@@ -285,7 +286,16 @@ Exchange HOST and Container
 nvidia-docker cp path/to/your/file container-name:/destination
 ```
 
+Exchange data folders :
 
+```shell
+docker run -v /src/webapp:/webapp #will mount /sr/webapp folder to /webapp on container
+docker run --volume /src/webapp:/webapp #identical
+#or in Dockerfile :
+VOLUME /src/webapp:/webapp
+
+docker inspect web #to check mount info of a running container.
+```
 
 TODO NOW : try creating a simple ubuntu image with anaconda, pytorch and a few pytorch stuff. using commit and review the history of commands easily.
 
@@ -293,6 +303,6 @@ TODO NOW : try creating a simple ubuntu image with anaconda, pytorch and a few p
 
 TODO : how to link the dataset to the docker image ?
 
-
+TODO : need a pytorch image with pytorch built from sources.
 
 [![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/basic_coding_tools.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/)

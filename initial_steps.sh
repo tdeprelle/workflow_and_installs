@@ -116,6 +116,8 @@ sudo ls -la /root
 #allow ssh conenctions
 sudo apt-get install open-ssh
 
+#tasque
+sudo apt-get install tasque
 #last check
 sudo apt-get update
 sudo apt-get upgrade
