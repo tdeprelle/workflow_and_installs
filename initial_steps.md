@@ -84,6 +84,17 @@ $ sudo apt-get install google-chrome-stable
 
 Then you can install useful extension on Chrome. I use Ghostery to stop trackers and Addblock to stop pop-ups. I also use MySms to send texts from my browser.
 
+If you can't open external links (open a new window but not the link). Follow [this](http://askubuntu.com/questions/689449/external-links-are-opened-as-blank-tabs-in-new-browser-window-in-chrome).
+
+In ```.local/share/application/google-chrome.desktop``` :
+
+```shell
+#Replace
+Exec=/opt/google/chrome/chrome
+#with
+Exec=/opt/google/chrome/chrome %U
+```
+
 ### Small useful things
 
 #### **Htop** -- monitor your CPU

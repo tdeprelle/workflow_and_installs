@@ -28,7 +28,7 @@ This guide describe how to set up a dual boot on a windows 10 machine, with ubun
 
 ### Step 2: Create a live USB
 
-  1. Download iso file for Ubuntu [here](http://releases.ubuntu.com/16.04/) or just run
+    1. Download iso file for Ubuntu [here](http://releases.ubuntu.com/16.04/) or just run
 
 
   ``` sh
@@ -81,34 +81,52 @@ This guide describe how to set up a dual boot on a windows 10 machine, with ubun
 
 ### Step 5: Resize your Swap
  * The default installation of Ubuntu creates a swap as big as the RAM which is a good thing. Now if your are on a serveur with 128GB, you don't want to use 128GB of your SSD for your swap. So in this specific case, you need to take additional steps to resize your swap.
- 
+
    ```sh 
-$ sudo apt-get install gparted 
+   $ sudo apt-get install gparted 
    ```
    ```sh
-$ sudo gparted 
+   $ sudo gparted 
    ```
 
 * GParted analyses your disk. You can select the swap partition, **run " swapoff"** and then **delete this partition**.
+
 * You now have used space on the right of you Ubuntu partition.
+
 * You can **extend your Ubuntu partition** to fill the entire space left by the swap partition
+
 * Apply changes
+
 * Reboot
+
 * Check that the deletion of the swap was done by :
 
    ```sh
-$ sudo apt-get install htop
+   $ sudo apt-get install htop
    ```
    ```sh
-$ htop 
+   $ htop 
    ```
-   
+
 * You should see "0 K" for the swap.
- 
+
+   ​
+
+
+
 
 ### Step 6: Update, Install the basic tool on Ubuntu to set up a good workflow [here](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/useful_basic_install)!
- 
+
+### Step 7: change your boot order
+
+``` shell
+sudo add-apt-repository ppa:danielrichter2007/grub-customizer
+sudo apt-get update
+sudo apt-get install grub-customizer
+```
+
 ### Acknowledgement 
+
  My main [inspiration](http://www.tecmint.com/install-ubuntu-16-04-alongside-with-windows-10-or-8-in-dual-boot/) ! 
 
 

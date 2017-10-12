@@ -102,6 +102,7 @@ From torch
 
 ```lua
 local cv = require 'cv'
+require 'cv.imgcodecs' 
 loadType = cv.IMREAD_COLOR
 src = cv.imread{'myimage.exr', loadType}
 print(src:size())

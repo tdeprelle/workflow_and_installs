@@ -50,7 +50,12 @@ ssh -T git@github.com #should output  You've successfully authenticated!
 
 ### Usecase
 
+* view a previous commit in detached head
 
+* ```shell
+  git checkout 6e23a6a
+  git checkout mybranch #tocomeback
+  ```
 
 
 
