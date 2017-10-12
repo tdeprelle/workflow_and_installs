@@ -215,6 +215,16 @@ $ sudo apt-get install synaptic
 ```
 Synaptic is a package manager that allows to install packages with a GUI. I use it because it's one of the easiest way to see which package are already installed on the machine.
 
+
+
+### tasque -- TO DO List Gui
+
+It's always useful to keep a todo list !
+
+```shell
+sudo apt-get install tasque
+```
+
 ### Benchmark
 
 If you want to test your new hardware, or see of it decays over time, check the [dedicated post](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/benchmark.md) ! ;) 

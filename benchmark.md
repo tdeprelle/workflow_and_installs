@@ -46,5 +46,67 @@ GPU | cuda | total time for 10 iterations (ms) | billion interactions per second
 *GeForce GTX TITAN X* | 8 | 3688 | 177 | 3553
 *GTX970M* | 8 | 9148 | 71 | 1432
 
+#CPU
+* Macbook pro
+``` sh
+sysbench --test=cpu --cpu-max-prime=20000 run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.7 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+
+General statistics:
+    total time:                          10.0009s
+    total number of events:              4135
+
+Latency (ms):
+         min:                                  2.21
+         avg:                                  2.42
+         max:                                  4.40
+         95th percentile:                      3.07
+         sum:                               9999.11
+
+Threads fairness:
+    events (avg/stddev):           4135.0000/0.00
+    execution time (avg/stddev):   9.9991/0.00
+``` 
+* MSI Ghost Pro
+``` sh
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          33.8106s
+    total number of events:              10000
+    total time taken by event execution: 33.8093
+    per-request statistics:
+         min:                                  2.87ms
+         avg:                                  3.38ms
+         max:                                  9.74ms
+         approx.  95 percentile:               9.34ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   33.8093/0.00
+
+``` 
 
 [![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/benchmark.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/)
