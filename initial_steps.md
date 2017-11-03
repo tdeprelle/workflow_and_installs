@@ -225,6 +225,52 @@ It's always useful to keep a todo list !
 sudo apt-get install tasque
 ```
 
+
+
+# GCC G++
+
+## Install and configure
+
+```shell
+sudo update-alternatives --remove-all gcc 
+sudo update-alternatives --remove-all g++
+sudo apt-get install gcc-4.8 gcc-4.9 gcc-5 gcc-6 g++-4.8 g++-4.9 g++-5 g++-6
+
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.8 10
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 20
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 30
+sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-6 40
+
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 10
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 20
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-5 30
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-6 40
+
+sudo update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 30
+sudo update-alternatives --set cc /usr/bin/gcc
+
+sudo update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++ 30
+sudo update-alternatives --set c++ /usr/bin/g++
+```
+
+```shell
+sudo update-alternatives --config gcc
+sudo update-alternatives --config g++
+```
+
+
+
+### ISUTF8
+
+Check if a file is in utf8 format and stops at first error;
+
+```shell
+sudo apt-get install moreutils
+isutf8 file
+```
+
+
+
 ### Benchmark
 
 If you want to test your new hardware, or see of it decays over time, check the [dedicated post](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/benchmark.md) ! ;) 
