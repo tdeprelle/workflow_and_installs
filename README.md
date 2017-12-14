@@ -14,7 +14,7 @@ This repo is to share my tribulation in installing different software and settin
 
 - [Torch7 Workflow (cuda, notebooks, useful packages)](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/torch_workflow.md)
 - [Manage EXR files, exrdisplay, blender, imagemagick](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/Manage_EXR_files.md)
-- Comming next [ CUDA 8 and 7.5 install on Ubuntu 16.04 ](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/cuda_install.md)
+- [ CUDA 8 and 7.5 and 9.0 install on Ubuntu 16.04 ](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/cuda_install.md)
 - Comming next [(very) Basic tool for a coder : Git, Latek, and others](https://github.com/ThibaultGROUEIX/workflow_and_installs/tree/master/basic_coding_tools.md)
 
 
