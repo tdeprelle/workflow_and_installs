@@ -13,9 +13,11 @@ $ sudo hdparm -Tt /dev/YOUR_DISK
 
 Disk | Timing cached reads | Timing buffered disk reads
 --- | --- | ---
-*serveur SSD* | 11703.38 MB/sec | 513.28 MB/sec 
-*On my laptop SSD* | 10737.70 MB/sec | 1273.17 MB/sec 
-*On my laptop HDD* | 10420.64 MB/sec | 135.65 MB/sec
+*serveur SSD (Samsung 960 EVO 1 To)  * | 10881 MB/sec | 795 MB/sec
+*serveur SSD (Samsung SSD 850 PRO 512GB) * | 11703 MB/sec | 513 MB/sec
+*serveur HDD ( Western Digital Red WDC WD30EFRX-68EUZN0)* | 11404 MB/sec | 152 MB/sec 
+*On my laptop SSD* | 10737 MB/sec | 1273 MB/sec 
+*On my laptop HDD* | 10420 MB/sec | 135 MB/sec
 
 
 
