@@ -44,6 +44,7 @@ Here are the results for different GPU I encountered in my life. Feel free to se
 
 GPU | cuda | total time for 10 iterations (ms) | billion interactions per second | single-precision GFLOP/s at 20 flops per interaction
 --- | --- | --- | --- | ---
+*TITAN X (Pascal)* | 9 | 1664 | 393 | 7875
 *TITAN X (Pascal)* | 8 | 1727 | 379 | 7589
 *GeForce GTX TITAN X* | 8 | 3688 | 177 | 3553
 *GTX970M* | 8 | 9148 | 71 | 1432
