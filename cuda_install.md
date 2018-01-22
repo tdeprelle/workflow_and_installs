@@ -104,7 +104,12 @@ sudo reboot
 ```
 
 #ISSUE
-Error message *[3_Imaging/cudaDecodeGL/Makefile.ph_build] Error 2* during the compilation: The makefiles of the samples have wrong nvidia-367 version numbers. Substitute them with good one (for example, nvidia-375) : sed -i "s/nvidia-367/nvidia-375/g" `grep "nvidia-367" -r ./ -l` and try to make again. More details can be seen [here](https://askubuntu.com/questions/891003/failure-in-running-cuda-sample-after-cuda-8-0-installation).
+
+Error message *[3_Imaging/cudaDecodeGL/Makefile.ph_build] Error 2* during the compilation:
+
+The makefiles of the samples have wrong nvidia-367 version numbers. Substitute them with good one (for example, nvidia-375) : 
+```sed -i "s/nvidia-367/nvidia-375/g" `grep "nvidia-367" -r ./ -l````
+and try to make again. More details can be seen [here](https://askubuntu.com/questions/891003/failure-in-running-cuda-sample-after-cuda-8-0-installation).
 
 
 #testing

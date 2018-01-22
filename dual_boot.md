@@ -132,7 +132,7 @@ sudo apt-get install grub-customizer
  
 ### ISSUES
 
-1. Hardware Error: If you have a quite new motherboard and CPU as *Gigabyte x299* and *i7-7820x*, you might suffer from 'Hardware error' when booting from USB. In this case, check the handware at first, make sure it is not a problem of CPU or motherboard. Then, try to install **Ubuntu 14.04** version. In case of booting to black screen during the installation of 14.04, set *acpi = off* might be helpful. More details can be seen from [here] (https://askubuntu.com/questions/943461/cannot-install-ubuntu-14-16-17-on-i7-7820x-and-gigabyte-x299-ud4)
+1. Hardware Error: If you have a quite new motherboard and CPU as *Gigabyte x299* and *i7-7820x*, you might suffer from 'Hardware error' when booting from USB. In this case, check the handware at first, make sure it is not a problem of CPU or motherboard. Then, try to install **Ubuntu 14.04** version. In case of booting to black screen during the installation of 14.04, set *acpi = off* might be helpful. More details can be seen from [here](https://askubuntu.com/questions/943461/cannot-install-ubuntu-14-16-17-on-i7-7820x-and-gigabyte-x299-ud4)
 
 2. Internet connextion settings (IP, DNS, GW, MASK) via commands
 
