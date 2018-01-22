@@ -102,6 +102,11 @@ sudo make
 
 sudo reboot
 ```
+
+#ISSUE
+Error message *[3_Imaging/cudaDecodeGL/Makefile.ph_build] Error 2* during the compilation: The makefiles of the samples have wrong nvidia-367 version numbers. Substitute them with good one (for example, nvidia-375) : sed -i "s/nvidia-367/nvidia-375/g" `grep "nvidia-367" -r ./ -l` and try to make again. More details can be seen [here](https://askubuntu.com/questions/891003/failure-in-running-cuda-sample-after-cuda-8-0-installation).
+
+
 #testing
 
 ```./nbody -benchmark -numbodies=256000```
@@ -121,5 +126,49 @@ GTX970
 = 71.634 billion interactions per second
 = 1432.690 single-precision GFLOP/s at 20 flops per interaction
 
+Or you can:
 
+* Run the deviceQuery sample:
+```
+cd /usr/local/cuda-8.0/samples
+# ./bin/ppc64le/linux/release/deviceQuery
+  ./deviceQuery Starting...
+  CUDA Device Query (Runtime API) version (CUDART static linking)
+  Detected 4 CUDA Capable device(s)
+  Device 0: "Tesla K80"
+    CUDA Driver Version / Runtime Version          7.5 / 7.5
+    CUDA Capability Major/Minor version number:    3.7
+    Total amount of global memory:                 11520 MBytes (12079136768 bytes)
+    (13) Multiprocessors, (192) CUDA Cores/MP:     2496 CUDA Cores
+    GPU Max Clock rate:                            824 MHz (0.82 GHz)
+    Memory Clock rate:                             2505 Mhz
+    Memory Bus Width:                              384-bit
+    L2 Cache Size:                                 1572864 bytes
+    ............
+    deviceQuery, CUDA Driver = CUDART, CUDA Driver Version = 7.5, CUDA Runtime Version = 7.5, NumDevs = 4, Device0 = Tesla K80, Device1 = Tesla K80, Device2 = Tesla K80, Device3 = Tesla K80
+    Result = PASS
+```
+
+* Run the bandwidthTest sample:
+```
+cd /usr/local/cuda-8.0/samples
+# ./bin/ppc64le/linux/release/bandwidthTest
+  [CUDA Bandwidth Test] - Starting...
+  Running on...
+  Device 0: Tesla K80
+  Quick Mode
+  Host to Device Bandwidth, 1 Device(s)
+  PINNED Memory Transfers
+    Transfer Size (Bytes)        Bandwidth(MB/s)
+    33554432                     7765.1
+  Device to Host Bandwidth, 1 Device(s)
+  PINNED Memory Transfers
+    Transfer Size (Bytes)        Bandwidth(MB/s)
+    33554432                     7759.6
+  Device to Device Bandwidth, 1 Device(s)
+  PINNED Memory Transfers
+    Transfer Size (Bytes)        Bandwidth(MB/s)
+    33554432                     141485.3
+  Result = PASS
+```
 [![Analytics](https://ga-beacon.appspot.com/UA-91308638-2/github.com/ThibaultGROUEIX/workflow_and_installs/initial_steps.md?pixel)](https://github.com/ThibaultGROUEIX/workflow_and_installs/)
