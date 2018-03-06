@@ -28,6 +28,29 @@ export PYTHONPATH="/home/your_name/anaconda2/lib/python2.7:$PYTHONPATH"
 
 Don't forget to source your **.bashrc** !
 
+### Enable Autocompletion for "source activate"
+
+Save in /etc/bash_completion.d/
+
+```shell
+# command: source
+# Allow autocomplete for conda environments
+
+_complete_source_activate_conda(){
+      if [ ${COMP_WORDS[COMP_CWORD-1]} != "activate" ]
+      then
+          return 0
+      fi
+      local cur=${COMP_WORDS[COMP_CWORD]}
+      COMPREPLY=($(ls ~/anaconda3/envs | xargs -I dirs bash -c "compgen -W dirs $cur"))
+      return 0
+}
+
+complete -F _complete_source_activate_conda source
+```
+
+
+
 ### Create relevant envs
 
 ```shell
