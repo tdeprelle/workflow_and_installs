@@ -10,7 +10,7 @@ This should take about 15 minutes.
 
   ``` sh
   $ sudo apt-get install ubuntu-minimal
-  $ sudo apt-get install ubuntu-standart
+  $ sudo apt-get install ubuntu-standard
   $ sudo apt-get install ubuntu-desktop 
   ```
 
